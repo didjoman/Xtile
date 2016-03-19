@@ -22,6 +22,7 @@ If you want to use it above your current window manager, add it to your startup 
 ![alt tag](https://cloud.githubusercontent.com/assets/631898/13895986/c5f4d8b6-ed7c-11e5-8375-83b12c3ca9e0.jpg)
 
 ## Demo
+
 [![Alt text for your video](https://img.youtube.com/vi/Jfjvu9v9xKY/0.jpg)](https://youtu.be/Jfjvu9v9xKY)
 
 ## Window Manager compatibility
