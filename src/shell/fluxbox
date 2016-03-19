@@ -1,0 +1,18 @@
+#!/bin/bash
+
+
+height=$(cat  "$(cat $HOME/.fluxbox/init | awk '/session.styleFile:/ {print $NF}')/theme.cfg" | awk '/toolbar.height:/ {print $NF}')
+echo $height
+
+position=$(cat $HOME/.fluxbox/init | awk '/session.screen0.toolbar.placement:/ {print $NF}')
+
+
+if [ "$(echo $position | awk '/Top.*/ {print 1}')" -eq 1 ]; then
+
+if [ "$(echo $position | awk '/Bottom.*/ {print 1}')" -eq 1 ]; then
+
+elif [ "$(echo $position | awk '/Left.*/ {print 1}')" -eq 1 ]; then
+
+elif [ "$(echo $position | awk '/Right.*/ {print 1}')" -eq 1 ]; then
+
+fi

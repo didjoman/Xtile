@@ -1,0 +1,24 @@
+#!/bin/bash
+
+WAY=$(cd $(dirname $0); pwd)
+
+[ -f $WAY/xtile_sh_lib.sh ] && . $WAY/xtile_sh_lib.sh || ( echo missing file $WAY/xtile_sh_lib.sh; exit 1 )
+
+
+
+#$(get_util_dimension_for_screen width)
+#echo $(get_windows_on_workspace 0)
+#echo $(get_visible_windows_on_workspace 0)
+echo $(get_next_visible_window_on_workspace 0xc00022)
+#echo $(get_last_visible_window_on_workspace 0xc00022)
+#echo $(get_last_window_on_workspace 0x2a0005c)
+#echo $(get_workspace_for_window 0x04c00004)
+#echo $(get_list_of_windows)
+
+#echo $(get_border_for_window 0x00e00006 right)
+#echo $(get_border_for_window 0x00e00006 left)
+#echo $(get_border_for_window 0x00e00006 top)
+#echo $(get_border_for_window 0x00e00006 bottom)
+
+#$(do_move_in_real_space 0x00e00006 x 0)
+#echo $(get_util_dimension_for_screen width)
